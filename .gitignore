@@ -1,0 +1,17 @@
+# Fortune-cookie entry for the liquidated trader — build leftovers
+# (unique to this repo: fortune-cookie run artefacts, 25 Nov 2026)
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+output/
+entry.txt
+local-test/
+*.tar.gz
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.venv/
+venv/
+kit.zip
