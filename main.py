@@ -22,6 +22,10 @@ def main() -> None:
     words = FORTUNE.split()
     assert 1 <= len(words) <= 20, "fortune must be at most 20 words"
     assert 1 <= len(FORTUNE) <= 160, "fortune must be 1-160 characters"
+    assert "\n" not in FORTUNE, "fortune must be a single line"
+    assert "market" in FORTUNE and "trade" in FORTUNE, (
+        "fortune must name the loss (market) and the trader (trade)"
+    )
     assert FORTUNE.strip() == FORTUNE, "fortune must not have leading/trailing space"
     parent = os.path.dirname(OUTPUT_PATH)
     if parent:
